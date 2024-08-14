@@ -1,1 +1,30 @@
 header.header
+
+    .header__logo
+        img(src="./images/logo.svg", alt="Логотип БИГТеатра" decoding="async" width="176" height="71")
+
+    nav.header__nav
+
+        ul.header__list 
+            li.header__item 
+                a.header__link(href="#about") О спектакле
+            li.header__item 
+                a.header__link(href="#plays") Пьесы
+            li.header__item 
+                a.header__link(href="#persons") Люди театра
+            li.header__item 
+                a.header__link(href="#footer") Контакты
+
+    button.header__burger.active(type="button" aria-label="Открыть мобильное меню"): span
+
+
+    .header__logo_compose
+        .header__logo_company
+            img(src="./images/logo2.svg", alt="Логотип компании Бигам" decoding="async" width="113" height="71")
+
+        .header__logo_drill
+
+            img(src="./images/drill.png", alt="" decoding="async" width="110" height="133")
+
+
+

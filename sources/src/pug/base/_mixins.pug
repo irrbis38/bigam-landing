@@ -20,25 +20,25 @@ mixin picture(name,ext,x2)
             source.object-fit-cover(srcset="images/" + name + ".webp, images/" + name + "@2x.webp 2x" type="image/webp")
             img.picture__img.object-fit-cover(src="images/" + name + "." + ext srcset="images/" + name + "." + ext + ", images/" + name + "@2x." + ext + " 2x" alt="")
 
-mixin pictureSize(name,ext,x2,width,height)
+mixin pictureSize(name,ext,x2,width,height,alt)
     if !x2
         picture.picture.object-fit-cover
             source.object-fit-cover(srcset="images/" + name + ".webp" type="image/webp")
-            img.picture__img.object-fit-cover(src="images/" + name + "." + ext alt="" width= width height= height loading="lazy" decoding="async")
+            img.picture__img.object-fit-cover(src="images/" + name + "." + ext alt= alt width= width height= height loading="lazy" decoding="async")
     else
         picture.picture.object-fit-cover
             source.object-fit-cover(srcset="images/" + name + ".webp, images/" + name + "@2x.webp 2x" type="image/webp")
-            img.picture__img.object-fit-cover(src="images/" + name + "." + ext srcset="images/" + name + "." + ext + ", images/" + name + "@2x." + ext + " 2x" alt="" width= width height= height loading="lazy" decoding="async")
+            img.picture__img.object-fit-cover(src="images/" + name + "." + ext srcset="images/" + name + "." + ext + ", images/" + name + "@2x." + ext + " 2x" alt= alt width= width height= height loading="lazy" decoding="async")
 
-mixin pictureSizeWithoutLazy(name,ext,x2,width,height)
+mixin pictureSizeWithoutLazy(name,ext,x2,width,height,alt)
     if !x2
         picture.picture.object-fit-cover
             source.object-fit-cover(srcset="images/" + name + ".webp" type="image/webp")
-            img.picture__img.object-fit-cover(src="images/" + name + "." + ext alt="" width= width height= height  decoding="async")
+            img.picture__img.object-fit-cover(src="images/" + name + "." + ext alt= alt width= width height= height  decoding="async")
     else
         picture.picture.object-fit-cover
             source.object-fit-cover(srcset="images/" + name + ".webp, images/" + name + "@2x.webp 2x" type="image/webp")
-            img.picture__img.object-fit-cover(src="images/" + name + "." + ext srcset="images/" + name + "." + ext + ", images/" + name + "@2x." + ext + " 2x" alt="" width= width height= height decoding="async")
+            img.picture__img.object-fit-cover(src="images/" + name + "." + ext srcset="images/" + name + "." + ext + ", images/" + name + "@2x." + ext + " 2x" alt= alt width= width height= height decoding="async")
 
 mixin pictureSizeWithoutLazyMedia(nameMax, nameMin,ext,x2,width,height, max, min)
     if !x2

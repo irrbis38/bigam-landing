@@ -1,11 +1,22 @@
-:root {
-    // colors
-    $color_deep_reed: #330102;
-    $color_black: #000;
-    $color_white: #fff;
-}
+// colors
+$color_deep_reed: #330102;
+$color_black: #000;
+$color_white: #fff;
+$color_orange: #e86907;
+$color_blue: #053671;
+$color_grey: #d1d1d1;
 
 // fonts
 
 $font_mont: "Montserrat", sans-serif;
 $font_old: "Old Standard TT", serif;
+$font_muller: "Muller", sans-serif;
+$font_helvetica: "Helvetica Neue", sans-serif;
+$font_minion: "Minion Pro", serif;
+
+// paddings
+
+$p_desk: 30px;
+$p_mob: 15px;
+$p_both_desk: 0 30px;
+$padding_mobile: 0 15px;

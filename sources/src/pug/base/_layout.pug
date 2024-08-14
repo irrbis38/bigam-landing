@@ -33,11 +33,13 @@ html(lang="ru")
         link(rel="stylesheet" href="css/main.min.css")
 
     body
-        block header
-            include ../blocks/_header
+        .container
+            .inner
+                block header
+                    include ../blocks/_header
 
-        block main
-            include ../blocks/_main
+                block main
+                    include ../blocks/_main
 
         block footer
             include ../blocks/_footer
