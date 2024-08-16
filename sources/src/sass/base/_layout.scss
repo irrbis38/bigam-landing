@@ -21,7 +21,7 @@
 html {
     min-width: 360px;
     scrollbar-gutter: stable;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 body {
@@ -69,8 +69,12 @@ body.lock {
         width: 100%;
         height: 100%;
         pointer-events: none;
-        box-shadow: 12px 0px 8px -5px rgba(0, 0, 0, 0.2) inset,
-            -12px 0px 8px -5px rgba(0, 0, 0, 0.2) inset;
+        -webkit-box-shadow: 6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset,
+            -6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset;
+        -moz-box-shadow: 6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset,
+            -6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset;
+        box-shadow: 6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset,
+            -6px 0px 6px -3px rgba(34, 60, 80, 0.2) inset;
     }
 }
 

@@ -53,10 +53,10 @@ var initIntro = () => {
         fadeEffect: {
             crossFade: true,
         },
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
     });
 };
 
